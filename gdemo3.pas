@@ -1,4 +1,5 @@
 // PasIntro v2.2 (Tebe / Madteam)
+// changes: 21-04-2018
 
 uses crt;
 
@@ -268,7 +269,7 @@ begin
 
    inc(LineAdr, width);
 
-   Poke(status+trunc(real(times) * status_step), $80);
+   Poke(status+trunc(times * status_step), $80);
 
    inc(times);
  end;
